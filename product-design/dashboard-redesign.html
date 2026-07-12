@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard Redesign | Mehr Khwaja</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="site-nav">
+  <a class="logo" href="../index.html">Mehr Khwaja</a>
+  <nav>
+    <a href="index.html">Product Design</a>
+    <a href="../research/index.html">Research &amp; Critical Design</a>
+    <a href="../beyond-the-studio.html">Beyond the Studio</a>
+    <a href="../bio.html">Bio</a>
+  </nav>
+</header>
+
+<div class="cs-layout">
+  <div class="cs-col-text">
+    <h1>Dashboard Redesign <span class="spark" style="color:var(--c5);">✦</span></h1>
+    <p class="cs-subtitle">Shortening the path to simple transactions</p>
+    <p class="cs-lede">UBL's original dashboard only did one thing well: show your balance. Everything else was buried behind menus. I redesigned the information architecture so the tasks customers actually reach for are one or two taps away.</p>
+
+    <hr class="cs-divider-line" />
+    <div class="cs-skills">UX DESIGN | INFORMATION ARCHITECTURE | PROTOTYPING</div>
+
+    <div class="cs-block">
+      <h2><span class="step-num">01</span> Challenge</h2>
+      <p>The earlier dashboard had exactly one piece of functionality upfront: viewing your balance, hidden behind a tap to reveal circle. Every other everyday task, sending money, paying a favourite, checking a statement across accounts, required navigating into nested menus first. For a screen customers opened multiple times a day, that was a lot of friction for very little payoff.</p>
+    </div>
+
+    <div class="cs-block">
+      <h2><span class="step-num">02</span> Approach</h2>
+      <p>I audited which tasks customers performed most often and rebuilt the information architecture around them, surfacing quick actions, favourites, and account switching directly on the home screen instead of behind a menu. The goal wasn't a visual refresh, it was making the fastest path to a common transaction as short as possible.</p>
+    </div>
+
+    <div class="cs-block">
+      <div class="before-after">
+        <figure>
+          <div class="mini-phone">
+            <div style="font-size:0.68rem; color:var(--muted);">Good Morning, Zainab</div>
+            <div class="reveal-circle">◎</div>
+            <p style="text-align:center; font-size:0.66rem; color:var(--muted); margin:0;">Tap to show balance</p>
+            <div class="mini-bottom-nav">
+              <span>Accounts</span><span>Payments</span><span>Favourites</span>
+            </div>
+          </div>
+          <figcaption>Before: balance only, everything else nested behind menus.</figcaption>
+        </figure>
+        <figure>
+          <div class="mini-phone">
+            <div style="font-size:0.68rem; color:var(--muted); margin-bottom:8px;">Good Morning, Zainab</div>
+            <div class="balance-card">
+              <div class="acct">Zainab Qazilbash •••• 2347</div>
+              <div class="amt">Rs. 05,997</div>
+            </div>
+            <div class="quick-grid">
+              <div class="qi"><div class="ico">↗</div>Pay Anyone</div>
+              <div class="qi"><div class="ico">▤</div>Bills</div>
+              <div class="qi"><div class="ico">＋</div>Top Up</div>
+            </div>
+            <div class="mini-bottom-nav">
+              <span>Home</span><span>Payments</span><span>Accounts</span>
+            </div>
+          </div>
+          <figcaption>After: balance, quick actions, and favourites all upfront.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="cs-block">
+      <h2><span class="step-num">03</span> Solution</h2>
+      <p>The redesigned dashboard surfaces the most used features directly on the home screen: balance, quick actions, and favourite payees. Adding a favourite and paying them takes a fraction of the taps it used to. Customers with multiple accounts can switch and pull a statement without leaving the flow.</p>
+      <p>Click through the rebuilt flow to the right.</p>
+    </div>
+
+    <div class="cs-block">
+      <h2><span class="step-num">04</span> Result</h2>
+      <p>Customers can now complete the transactions they perform most, checking a balance, paying a favourite, switching accounts, in half the taps the old dashboard required, without ever leaving the home screen.</p>
+    </div>
+  </div>
+
+  <div class="cs-col-media">
+    <div class="proto-frame" id="proto-1">
+      <div class="proto-screen">
+
+        <div class="screen active" style="justify-content:flex-start;">
+          <div style="font-size:0.7rem; color:var(--muted); margin-bottom:10px;">Good Morning, Zainab</div>
+          <div class="balance-card">
+            <div class="acct">Zainab Qazilbash •••• 2347</div>
+            <div class="amt">Rs. 05,997</div>
+          </div>
+          <div class="quick-grid">
+            <div class="qi"><div class="ico">↗</div>Pay Anyone</div>
+            <div class="qi"><div class="ico">▤</div>Bills</div>
+            <div class="qi"><div class="ico">＋</div>Top Up</div>
+          </div>
+          <p class="scr-sub" style="margin-top:10px;">No favourites yet.</p>
+          <button class="scr-button" data-proto-next>Add Favourites</button>
+        </div>
+
+        <div class="screen" style="justify-content:space-between;">
+          <div>
+            <p class="scr-title">Add Favourites</p>
+            <div class="toggle-row"><span>Aisha Khan</span><div class="toggle"></div></div>
+            <div class="toggle-row"><span>Bilal Hussain</span><div class="toggle on"></div></div>
+            <div class="toggle-row"><span>Farah Iqbal</span><div class="toggle"></div></div>
+            <div class="toggle-row"><span>Tariq Ahmed</span><div class="toggle"></div></div>
+          </div>
+          <button class="scr-button" data-proto-next>Done</button>
+        </div>
+
+        <div class="screen" style="justify-content:flex-start;">
+          <div style="font-size:0.7rem; color:var(--muted); margin-bottom:10px;">Good Morning, Zainab</div>
+          <div class="balance-card">
+            <div class="acct">Zainab Qazilbash •••• 2347</div>
+            <div class="amt">Rs. 05,997</div>
+          </div>
+          <p class="scr-label">Favourites</p>
+          <div class="avatar-row"><div class="av">BH</div></div>
+          <div class="quick-grid">
+            <div class="qi"><div class="ico">↗</div>Pay Anyone</div>
+            <div class="qi"><div class="ico">▤</div>Bills</div>
+            <div class="qi"><div class="ico">＋</div>Top Up</div>
+          </div>
+          <button class="scr-button" data-proto-next>Pay a Favourite</button>
+        </div>
+
+        <div class="screen" style="justify-content:space-between;">
+          <div>
+            <p class="scr-title">Pay</p>
+            <div class="balance-card" data-proto-next>
+              <div class="acct">Favourite</div>
+              <div class="amt" style="font-size:1.05rem;">Bilal Hussain</div>
+            </div>
+            <div class="list-row"><span>Others</span><span>→</span></div>
+          </div>
+          <button class="scr-button" data-proto-next>Continue</button>
+        </div>
+
+        <div class="screen" style="justify-content:space-between;">
+          <div>
+            <p class="scr-label">Pay Bilal Hussain</p>
+            <p style="font-family:var(--serif); font-size:1.9rem; margin:6px 0 16px;">Rs. 100,000</p>
+          </div>
+          <div>
+            <div class="numpad">
+              <button>1</button><button>2</button><button>3</button>
+              <button>4</button><button>5</button><button>6</button>
+              <button>7</button><button>8</button><button>9</button>
+              <button></button><button>0</button><button>⌫</button>
+            </div>
+            <button class="scr-button" data-proto-next>Proceed to Pay</button>
+          </div>
+        </div>
+
+        <div class="screen" style="justify-content:space-between;">
+          <div>
+            <p class="scr-title">Review Payment</p>
+            <div class="list-row"><span class="muted">From</span><span>Zainab Qazilbash</span></div>
+            <div class="list-row"><span class="muted">To</span><span>Bilal Hussain</span></div>
+            <div class="list-row"><span class="muted">Bank</span><span>Standard Chartered</span></div>
+            <div class="list-row"><span class="muted">Amount</span><span>Rs. 100,000</span></div>
+          </div>
+          <button class="scr-button" data-proto-next>Pay Now</button>
+        </div>
+
+        <div class="screen" style="justify-content:center; text-align:center;">
+          <div class="success-check">✓</div>
+          <p class="scr-title">Payment Successful</p>
+          <p class="scr-sub">Rs. 100,000 sent to Bilal Hussain.</p>
+          <button class="scr-button" data-proto-next>View All Accounts</button>
+        </div>
+
+        <div class="screen" style="justify-content:flex-start;">
+          <div style="font-size:0.7rem; color:var(--muted); margin-bottom:10px;">Good Morning, Zainab</div>
+          <div class="balance-card">
+            <div class="acct">Zainab Qazilbash •••• 2347</div>
+            <div class="amt">Rs. 05,997</div>
+          </div>
+          <div class="balance-card alt">
+            <div class="acct">Zainab Qazilbash •••• 8810</div>
+            <div class="amt">Rs. 29,902</div>
+          </div>
+          <button class="scr-button" data-proto-next>View Statement</button>
+        </div>
+
+        <div class="screen" style="justify-content:space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <p class="scr-title" style="margin:0;">Account Statement</p>
+              <span class="muted" style="font-size:0.7rem;">Download ↓</span>
+            </div>
+            <div class="stmt-row"><span>12 Jan · Bilal Hussain</span><span>Rs. 100,000</span></div>
+            <div class="stmt-row"><span>10 Jan · Top Up</span><span>Rs. 20,000</span></div>
+            <div class="stmt-row"><span>08 Jan · Bill Payment</span><span>Rs. 4,500</span></div>
+            <div class="stmt-row"><span>05 Jan · Transfer</span><span>Rs. 15,250</span></div>
+          </div>
+          <button class="scr-button secondary" data-proto-go="0">Start over</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="proto-controls">
+      <button class="proto-prev">← Back</button>
+      <button class="proto-next">Next →</button>
+    </div>
+    <div class="proto-dots">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <p class="cs-caption">Rebuilt from the original wireframes as a clean interactive prototype.</p>
+  </div>
+</div>
+
+<div class="cs-footer-nav">
+  <a class="btn ghost" href="term-deposits.html">← Digital Term Deposits</a>
+  <a class="btn" href="environmental-impact.html">Next: Environmental Impact →</a>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="muted">© 2026 Mehr Khwaja</span>
+    <div style="display:flex; gap:20px;">
+      <a href="https://www.linkedin.com/in/mehr-khwaja">LinkedIn</a>
+      <a href="mailto:mehrkhwaja@gmail.com">Email</a>
+      <a href="https://drive.google.com/file/d/1a8_d9MdsiZJ3KASTmUxzfw3oaV_guRx1/view?usp=sharing">CV</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/proto.js"></script>
+<script>initProto('proto-1');</script>
+</body>
+</html>
